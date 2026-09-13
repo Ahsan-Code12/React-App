@@ -6,7 +6,13 @@ const Header = () => {
                 <img src="/images/xora.svg" width={115} height={55} alt="Logo"/>
                 </a>
 
-                <div className="w-full border-2 border-amber-400"></div>
+                <div className="w-full border-2 border-amber-400">
+                    <nav>
+                        <ul className="flex max-lg:block max-lg:px-12">
+
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
     )
