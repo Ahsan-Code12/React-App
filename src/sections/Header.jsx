@@ -1,12 +1,13 @@
-import { Link as LinkScroll } from 'react-scroll'
+import { Link as LinkScroll } from 'react-scroll' //import react-scroll
 
-const NavLink = () => (
+// immdefiate function //pass title
+const NavLink = ( {title} ) => (
     <LinkScroll>
-
+        {title}
     </LinkScroll>
 )
 
-
+//non immdeiate function
 const Header = () => {
     return (
         <header className= "fixed top-0 left-0 z-50 w-full py-10">
@@ -19,7 +20,8 @@ const Header = () => {
                     <nav>
                         <ul className="flex max-lg:block max-lg:px-12">
                          <li className="nav-li">
-                             <NavLink title="feutures" />
+                           <NavLink title="feutures" />
+                             <div className="dot"></div>
                          </li>
                         </ul>
                     </nav>
